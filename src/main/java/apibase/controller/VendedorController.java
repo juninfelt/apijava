@@ -15,13 +15,12 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import apibase.exception.ResourceNotFoundException;
 import apibase.model.Login;
-import apibase.model.Produto;
 import apibase.model.Usuario;
 import apibase.repository.UsuarioRepository;
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/api/v1")
-public class UsuarioController {
+public class VendedorController {
     @Autowired // busca dados do banco de dados e altera
     private UsuarioRepository usuarioRepository;
     // Listar todos os usuarios

@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
 
 @Entity
 @Table(name = "usuario")
@@ -16,7 +15,7 @@ public class Cliente {
     private String email;
     private String celular;
     private String cidade;
-}
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -60,3 +59,4 @@ public class Cliente {
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
+}
